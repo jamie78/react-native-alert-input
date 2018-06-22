@@ -44,7 +44,7 @@ export default class extends React.Component {
         );
     } else for (let i = 0; i < num; i++) myContent.push(this.props.content[i]);
     return this.props.show ? (
-      <ScrollView style={styles.masker} keyboardDismissMode={"on-drag"}>
+      <ScrollView style={styles.masker}>
         <View style={[styles.container, this.props.style]}>
           {this.props.title ? (
             typeof this.props.title === "string" ? (
